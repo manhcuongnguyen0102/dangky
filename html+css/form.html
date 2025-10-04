@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrm</title>
+</head>
+<body>
+    <h1>Đơn Gia NHập HỘI Fan Cuồng đội tuyển bóng đá VIỆt Nam</h1>
+
+    <h5>Chào mừng bạn đến với hội của những trái tim đỏ rực, cháy hết mình vì màu cờ sắc áo ⚽🔥 </h5>
+    <form>
+        <label for="ten">Họ và tên(nhập đúng để chúng tôi gọi bạn đi bão nha !)</label>
+        <br>
+        <input id="name" name="name" type="text" required placeholder="VD: Nguyễn Văn Toàn" size="30">
+       <br><br>
+       <label for="mymail">Email để nhận link xem bóng đá chất lượng cao</label>
+       <br>
+       <input id="mymail" name="mymail" type="email" placeholder="VD:mnc@gmail.com" required size="30">
+       <br><br>
+       <label for="feel">Mô tả cảm xúc khi Việt Nam gi bàn phút 90+:</label>
+       <br>
+        <textarea id="feel" name="feel"  placeholder="Gõ thật lòng, đừng giấu cảm xúc..." rows="5" cols="50" spellcheck></textarea>
+        <br><br>
+        <fieldset>
+            <legend>
+                Giới tính của bạn(để chia chỗ ngồi trên xe đi bão)
+            </legend>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male">
+                Nam
+            </label>
+            <br>
+             <label for="female">
+                <input type="radio" id="female" name="gender" value="female">
+                Nữ
+            </label>
+            <br>
+             <label for="diff">
+                <input type="radio" id="diff" name="gender" value="diff">
+                Khác
+            </label>
+
+        </fieldset>
+        <br>
+        <label for="position">Bạn thích chơi ở vị trí nào trên sân bóng</label>
+        <select name="position" id="position">
+            <option value="tiền dạo">Tiền đạo( ghi bàn làm người hùng)</option>
+            <option value="tiền vệ">Tiền vệ(cầm trịch trận đấu)</option>
+            <option value="thủ môn">Thủ môn(người nhện trên sân cỏ)</option>
+            <option value="hậu vệ">Hậu vệ(gã vệ sĩ cuối cùng)</option>
+        </select>
+       <br><br>
+       <label for="favour">
+            Mức độ fan cuồng của bạn(từ 1 đến 10)
+            <input type="number" id="favour" name="favour" min="1" max="10" step="1" >
+       </label>
+       <br><br>
+         <label for="yourlove">
+            Cầu thủ yêu thích nhất
+            <input id="yourlove" name="yourlove" type="text" list="Player" placeholder="select....">
+            <datalist id="Player">
+                <option value="Công Phúng"></option>
+                <option value="Messi10"></option>
+                <option value="Bổn Lầy"></option>
+                <option value="Văn Lâm"></option>
+                <option value="văn Hậu"></option>
+                <option value="NickQTran"></option>
+            </datalist>
+       </label>
+       <p><b>Bạn có cam kết không quay lưng khi đội tuyển đá chưa tốt ?</b></p>
+       <br>
+       <label for="confirm">
+            Tôi cam kết
+            <input name="confirm" id="confirm" type="checkbox" checked >
+       </label>
+       <br>
+       <button type="submit">Gửi đơn(chuẩn bị đi bão thôi!🌾)</button>
+       <button type="reset">Xóa hết, viết lại vì cảm xúc dâng trào 🌾</button>
+       
+    </form>
+    <!-- emmet qtrong -->
+     <header>
+        <nav>
+            <ul>
+                <li class="nvaItem"><a href=""></a></li>
+                <li class="nvaItem"><a href=""></a></li>
+                <li class="nvaItem"><a href=""></a></li>
+                <li class="nvaItem"><a href=""></a></li>
+            </ul>
+        </nav>
+     </header>  
+     <input type="text" name="gender"><input type="text" name="gender"><input type="text" name="gender">
+</body>
+</html>
